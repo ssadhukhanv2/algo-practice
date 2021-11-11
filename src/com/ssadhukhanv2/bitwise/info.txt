@@ -1,0 +1,39 @@
+AND (&)
+- When you & 1 to a number, the digit remain the same.
+- Example:
+    10110101
+   &11111111 <- The value of this is not one, but a number which has 1 in all the places
+   =10110101
+- When you & Binary 1 to a number you get a number based on the LSB of a number
+- Example:
+    1010101(0) <-This is an even number.(LSB of EVEN number is always 0)
+   &0000000(1)
+   =0000000(0)
+
+    1010101(1) <-This is an odd number.(LSB of EVEN number is always 1)
+   &0000000(1)
+   =0000000(1)
+
+So based on the above we can say if we & 1(value of 1, NOT the "1111111") to a number, if the LSB of the result is 0,
+then the number is even and if it's 1, then the value is odd.
+
+OR (|)
+-
+
+XOR (^)
+- a^1 = compliment of a
+  Example: 7^1 would be 3 for Decimal Number System
+- a^0 = a
+- a^a = 0
+
+Complement (~)
+-Example: Complement of 7 in Decimal Number System would be 3
+
+Left Shift (<<)
+- Doubles the Number
+a<<1 =2a
+a<<n =a*Math.power(2,b)
+
+Right Shift (>>)
+- Opposite of Left Shift
+a>>b = a/Math.power(2,b)

@@ -1,0 +1,50 @@
+Steps to approach a problem in Recursion
+
+https://youtube/M2uO2nMT0Bk?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ&t=3249
+
+1) Identify if you can break the problem into smaller problems
+2) Write the recurrence relation if needed
+3) Draw the recursive tree
+4) About the tree
+    -See the flow of function & how they're getting stacked
+    -Identify and focus on left tree walk & then right tree walks
+    -Draw the tree & pointer again and again using pen and paper
+    -Use a debugger to see the flow
+5) See how the values are returned at each step and what are the return types of these values.
+6) See where the function call will come out. In the end you will come out of the main function.
+7) DO NOT OVERTHINK at the time of solving the problem
+8) OVERTHINK after solving the problem
+
+
+Types of Recurrence Relations:
+
+Linear Recurrence Relation: Very Inefficient as search space is reduced by subtracting the search space by a factor
+                            Eg: Fibonacci Sequence
+                            fib(n)=fib(n-1)+fib(n-2)
+
+Divide & Conquer Recurrence Relation: More efficient since the  search space is reduced by dividing it by a factor
+                            Eg: Binary Search
+                            f(N)=O(1)+f(N/2)
+                            Here N is the size of the array
+                            N/2 since we divide the search space at each level, so the search space is divided by a factor
+
+
+Working with variables in Recursion:
+
+    Arguments:  Will go in the next step
+                For example in Binary Search we will pass the start & end in the next function call,
+                as the search space is reduced:
+                Arguments would be  start & end
+
+    Return Type:    Type of the value that needs to be returned
+                    For example in Binary Search we will return mid:
+                    So return type would be the type of mid
+
+    Body of the Function:   Variable specific to the function call
+                            For example in Binary Search we use the value of mid to determine the value
+                            of start and end for the next function call.
+                            So mid will be in the body of the function
+
+
+
+*** Make sure to return the value of the recursion if there is a return type
